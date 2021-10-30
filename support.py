@@ -1,6 +1,5 @@
 import pandas as pd
 from collections import Counter
-from numpy.lib.function_base import extract
 from urlextract import URLExtract
 from wordcloud import WordCloud
 import emoji

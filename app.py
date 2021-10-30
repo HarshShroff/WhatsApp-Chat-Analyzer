@@ -1,4 +1,3 @@
-from os import name
 import streamlit as st
 import prepro
 import support
