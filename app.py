@@ -13,7 +13,7 @@ if uploaded_file is not None:
     data = bytes_data.decode('utf-8')
 
     # printing file name/chat name
-    a = str(uploaded_file)[45:]
+    a = str(uploaded_file)[44:]
     b = a.split('.txt')
     st.title('WhatsApp Chat Analysis with {}'.format(b[0]))
     # st.title()
@@ -177,6 +177,7 @@ position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
+background-color: black;
 color: white;
 text-align: center;
 }
