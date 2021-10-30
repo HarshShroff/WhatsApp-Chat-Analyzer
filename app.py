@@ -15,7 +15,7 @@ if uploaded_file is not None:
     # printing file name/chat name
     a = str(uploaded_file)[45:]
     b = a.split('.txt')
-    st.title('WhatsApp Chat Analysis with {}'.format(b[0])) 
+    st.title('WhatsApp Chat Analysis with {}'.format(b[0]))
     # st.title()
 
     # View data on webpage
@@ -91,7 +91,6 @@ if uploaded_file is not None:
             ax.bar(busyday.index, busyday.values, color='green')
             plt.xticks(rotation='vertical')
             st.pyplot(fig)
-            
 
         # busiest user in group chat
         if selected_user == 'Overall' and len(df['user'].unique()) > 2:
@@ -153,9 +152,37 @@ if uploaded_file is not None:
         with col2:
             st.dataframe(emodf, width=150, height=500)
 
-
         st.title('Activity Heatmap:')
         heatmap = support.heatmap(df, selected_user)
         fig, ax = plt.subplots()
         ax = sns.heatmap(heatmap)
         st.pyplot(fig)
+
+
+footer = """<style>
+a:link , a:visited{
+color: blue;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:hover,  a:active {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+</style>
+<div class="footer">
+<p>Developed with ❤ by <a style='display: block; text-align: center;'>Harsh Shroff</a></p>
+</div>
+"""
+st.markdown(footer, unsafe_allow_html=True)
