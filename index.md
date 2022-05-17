@@ -1,4 +1,4 @@
-# WhatsApp-Chat-Analyzer
+# WhatsApp Chat Analyzer
 
 A web app designed in python with the help of streamlit to analyze and visualyse WhatsApp chats.
 
