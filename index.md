@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# WhatsApp-Chat-Analyzer
 
-You can use the [editor on GitHub](https://github.com/HarshShroff/WhatsApp-Chat-Analyzer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A web app designed in python with the help of streamlit to analyze and visualyse WhatsApp chats.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Features:
+  - Total shared content
+  - Different timelines
+  - Chattiest users
+  - Emojis Used
+  - Wordcloud
+  - Heatmap
+  
+## Future Features:
+  - Adding more plots and visualizations
+  
+## Requirements:
+  - emoji - `pip install emoji`
+  - pandas - `pip install pandas`
+  - seaborn - `pip install seaborn`
+  - streamlit - `pip install streamlit`
+  - wordcloud - `pip install wordcloud`
+  - matplotlib - `pip install matplotlib`
+  - urlextract - `pip install urlextract`
+  
+**_Note:_** All of these packages can be installed by `pip install emoji pandas seaborn streamlit wordcloud matplotlib urlextract`
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HarshShroff/WhatsApp-Chat-Analyzer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## How to run?
+  - Go to https://hs-wca.herokuapp.com/
+  - Upload the text file of your WhatsApp chat in the sidebar on the left and click Analyze button.
+  
+### How to get the text file of WhatsApp chats?
+  - Open WhatsApp in mobile device and go to the WhatsApp chat you want to analyze
+  - Click three dots on the top right
+  - Click **More**
+  - Click **Export chat**
+  - Click **Without media**
+  - It will take a few moments to extract the chat, then it will ask to share the chat. You need to share this chat to anyone to get access to it.
+  - Download this `.txt` file and upload it in the website [here](https://hs-wca.herokuapp.com/)
